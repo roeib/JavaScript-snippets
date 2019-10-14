@@ -73,7 +73,23 @@ console.log( !!myVar ) // false
 
 console.log( Boolean(mySecondVar) ) // true
 console.log( !!mySecondVar ) // true
+```
+
+# How to repeat a string
+```javascript
+
+let aliens = '';
+
+for(let i = 0 ; i < 6 ; i++){
+ aliens += '👽'
+}
+//👽👽👽👽👽👽
+
+Array(6).join('👽')
+//👽👽👽👽👽👽
 
 
+'👽'.repeat(6)
+//👽👽👽👽👽👽
 
 ```
