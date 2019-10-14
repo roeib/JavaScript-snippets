@@ -1,5 +1,5 @@
 # JavaScript-snippets
-JavaScript Snippets
+find us on [Facebook](https://www.facebook.com/snippetsJS)
 
 
 # How to generate a random number in a given range
@@ -60,4 +60,20 @@ const difference = (a, b) => {
 
 difference(firstArr, secondArr); //[3,4]
 console.log('difference',difference(firstArr, secondArr))
+```
+
+# How to convert truthy/falsy to boolean(true/false)
+```javascript
+const myVar = null; 
+const mySecondVar = 1; 
+
+console.log( Boolean(myVar) ) // false
+console.log( !!myVar ) // false
+
+
+console.log( Boolean(mySecondVar) ) // true
+console.log( !!mySecondVar ) // true
+
+
+
 ```
