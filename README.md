@@ -96,10 +96,26 @@ Array(6).join('👽')
 # Check how long an operation takes
 ```javascript
 //The performance.now() method returns a DOMHighResTimeStamp, measured in milliseconds.
-//performance.now() is relative to page load and more precise in orders of magnitude. Use cases include benchmarking and other cases where a high-resolution time is required such as media (gaming, audio, video, etc.)
+//performance.now() is relative to page load and more precise in orders of magnitude. 
+//Use cases include benchmarking and other cases where a high-resolution time is required 
+//such as media (gaming, audio, video, //etc.)
 
 var startTime = performance.now();
 doSomething();
 const endTime = performance.now();
 console.log("this doSomething took " + (endTime - startTime) + " milliseconds.");
+```
+
+# Two ways to remove an item in a specific in an array
+
+```javascript
+//Mutating way
+const muatatedArray = ['a','b','c','d','e'];
+muatatedArray.splice(2,1)
+console.log(muatatedArray) //['a','b','d','e']
+
+//Non-mutating way
+const nonMuatatedArray = ['a','b','c','d','e'];
+const newArray = nonMuatatedArray.filter((item'index) => !( index === 2 ));
+console.log(newArray) //['a','b','d','e']
 ```
