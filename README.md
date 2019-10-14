@@ -136,7 +136,7 @@ myArray.flat(infinity) // [2, 3, 4, 5 ,7,7, 8, 9, 1, 1];
 
 ```
 
-#Get unique values in an array
+# Get unique values in an array
 
 ```javascript
 const numbers = [1,1,3,2,5,3,4,7,7,7,8];
