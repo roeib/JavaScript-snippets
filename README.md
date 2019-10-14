@@ -93,3 +93,13 @@ Array(6).join('👽')
 //👽👽👽👽👽👽
 
 ```
+# Check how long an operation takes
+```javascript
+//The performance.now() method returns a DOMHighResTimeStamp, measured in milliseconds.
+//performance.now() is relative to page load and more precise in orders of magnitude. Use cases include benchmarking and other cases where a high-resolution time is required such as media (gaming, audio, video, etc.)
+
+var startTime = performance.now();
+doSomething();
+const endTime = performance.now();
+console.log("this doSomething took " + (endTime - startTime) + " milliseconds.");
+```
