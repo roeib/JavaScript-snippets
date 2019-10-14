@@ -119,3 +119,19 @@ const nonMuatatedArray = ['a','b','c','d','e'];
 const newArray = nonMuatatedArray.filter((item'index) => !( index === 2 ));
 console.log(newArray) //['a','b','d','e']
 ```
+
+# Did you know you can flat an array?
+
+```javascript
+const myArray = [2, 3, [4, 5],[7,7, [8, 9, [1, 1]]]];
+
+myArray.flat() // [2, 3, 4, 5 ,7,7, [8, 9, [1, 1]]]
+
+myArray.flat(1) // [2, 3, 4, 5 ,7,7, [8, 9, [1, 1]]]
+
+myArray.flat(2) // [2, 3, 4, 5 ,7,7, 8, 9, [1, 1]]
+
+//if you dont know the depth of the array you can use infinity
+myArray.flat(infinity) // [2, 3, 4, 5 ,7,7, 8, 9, 1, 1];
+
+```
