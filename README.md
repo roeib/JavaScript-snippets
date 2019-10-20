@@ -158,3 +158,18 @@ const unieqNumbers4 = _.uniq(numbers)
 console.log(unieqNumbers4) //[1,3,2,5,4,7,8]
 
 ```
+# Copy Text to Clipboard
+
+
+```javascript
+function copyToClipboard() {
+
+  const copyText = document.getElementById("myInput");
+  copyText.select();
+  document.execCommand("copy");
+  
+}
+
+
+```
+
