@@ -169,7 +169,10 @@ function copyToClipboard() {
   document.execCommand("copy");
   
 }
-
+//new API
+function copyToClipboard(){
+ navigator.clipboard.writeText(document.querySelector('#myInput').value)
+}
 
 ```
 
