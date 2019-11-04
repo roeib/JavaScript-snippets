@@ -193,7 +193,7 @@ const user = {
  }
 }
 
-const { education : { degree } }
+const { education : { degree } } = user;
 console.log(degree) //Masters
 ```
 
