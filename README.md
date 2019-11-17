@@ -238,7 +238,7 @@ const countMyFruits = myFruits.reduce((countFruits,fruit) => {
   countFruits[fruit] = ( countFruits[fruit] || 0 ) +1;
   return countFruits
  },{} )
- console.log(countFruits)
+ console.log(countMyFruits)
  // { Apple:3, Banana:1, Mango:2, Orange:1 }
  
  //seconf option
