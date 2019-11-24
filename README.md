@@ -251,3 +251,24 @@ const countMyFruits = myFruits.reduce((countFruits,fruit) => {
  console.log(fruitsCounter)
  // { Apple:3, Banana:1, Mango:2, Orange:1 }
 ```
+
+
+#  Aliases with JavaScript Destructuring
+
+
+```javascript
+
+//There are cases where you want the destructured variable to have a different name than the property name
+
+const obj = { 
+  name: "JSsnippets"													
+};
+
+
+// Grabs obj.name as { pageName }
+const { name: pageName } = obj;
+
+//log our alias
+console.log(pageName) // JSsnippets
+```
+
