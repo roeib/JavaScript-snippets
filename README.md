@@ -272,3 +272,21 @@ const { name: pageName } = obj;
 console.log(pageName) // JSsnippets
 ```
 
+
+
+#  The Object.is() method determines whether two values are the same value
+
+
+```javascript
+Object.is('foo', 'foo');     // true
+
+Object.is(null, null);       // true
+
+Object.is(Nan, Nan);       // true 😱
+
+const foo = { a: 1 };
+const bar = { a: 1 };
+Object.is(foo, foo);         // true
+Object.is(foo, bar);         // false
+
+```
