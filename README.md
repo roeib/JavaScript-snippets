@@ -323,3 +323,25 @@ Object.isFrozen(obj) //true
 ```
 
 
+#  Printing Object keys and values
+
+
+```javascript
+const obj = { 
+  name: "JSsnippets",
+  age:29,
+};
+
+//Object.entries() method is used to return an array consisting of enumerable property 
+//[key, value] pairs of the object which are passed as the parameter.
+
+for(let [key,value] of Object.entries(obj)){
+   console.log(`${key}: ${value}`)
+}
+
+//expected output:
+// "name: Jssnippets"
+// "age: 29"
+// order is not guaranteed
+
+```
