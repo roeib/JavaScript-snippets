@@ -345,3 +345,17 @@ for(let [key,value] of Object.entries(obj)){
 // order is not guaranteed
 
 ```
+#  Capture the right click event
+
+```javascript
+window.oncontextmenu = () => {
+	console.log('right click');
+	return false // cancel default menu
+}
+//or
+
+window.addEventListener('contextmenu', ()=>{
+	console.log('right click');
+	return false // cancel default menu
+},false)
+```
