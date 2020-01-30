@@ -6,7 +6,7 @@
 find us on [Facebook](https://www.facebook.com/snippetsJS)
 
 
-# How to generate a random number in a given range
+# How to Generate a Random Number in a Given Range
 
 ```javascript
 // Returns a random number(float) between min (inclusive) and max (exclusive) 
@@ -26,7 +26,7 @@ const getRandomNumberInclusive =(min, max)=> {
 getRandomNumberInclusive(2, 10);
 ```
 
-# How to find the difference between two arrays.
+# How to Find the Difference Between Two Arrays
 
 
 ```javascript
@@ -66,7 +66,7 @@ difference(firstArr, secondArr); //[3,4]
 console.log('difference',difference(firstArr, secondArr))
 ```
 
-# How to convert truthy/falsy to boolean(true/false)
+# How to Convert Truthy/Falsy to Boolean (True/False)
 ```javascript
 const myVar = null; 
 const mySecondVar = 1; 
@@ -79,7 +79,7 @@ console.log( Boolean(mySecondVar) ) // true
 console.log( !!mySecondVar ) // true
 ```
 
-# How to repeat a string
+# How to Repeat a String
 ```javascript
 
 let aliens = '';
@@ -97,7 +97,7 @@ Array(6).join('👽')
 //👽👽👽👽👽👽
 
 ```
-# Check how long an operation takes
+# Check How Long an Operation Takes
 ```javascript
 //The performance.now() method returns a DOMHighResTimeStamp, measured in milliseconds.
 //performance.now() is relative to page load and more precise in orders of magnitude. 
@@ -110,7 +110,7 @@ const endTime = performance.now();
 console.log("this doSomething took " + (endTime - startTime) + " milliseconds.");
 ```
 
-# Two ways to remove an item in a specific in an array
+# Two Ways to Remove a Specific Item in an Array
 
 ```javascript
 //Mutating way
@@ -120,11 +120,11 @@ console.log(muatatedArray) //['a','b','d','e']
 
 //Non-mutating way
 const nonMuatatedArray = ['a','b','c','d','e'];
-const newArray = nonMuatatedArray.filter((item'index) => !( index === 2 ));
+const newArray = nonMuatatedArray.filter((item,index) => !( index === 2 ));
 console.log(newArray) //['a','b','d','e']
 ```
 
-# Did you know you can flat an array?
+# Did You Know You Can Flatten an Array?
 
 ```javascript
 const myArray = [2, 3, [4, 5],[7,7, [8, 9, [1, 1]]]];
@@ -140,7 +140,7 @@ myArray.flat(infinity) // [2, 3, 4, 5 ,7,7, 8, 9, 1, 1];
 
 ```
 
-# Get unique values in an array
+# Get Unique Values in an Array
 
 ```javascript
 const numbers = [1,1,3,2,5,3,4,7,7,7,8];
@@ -180,7 +180,7 @@ function copyToClipboard(){
 
 ```
 
-#  Nested Destructuring
+# Nested Destructuring
 
 
 ```javascript
@@ -197,7 +197,7 @@ const { education : { degree } } = user;
 console.log(degree) //Masters
 ```
 
-#  URLSearchParams 
+# URLSearchParams 
 
 
 ```javascript
@@ -213,7 +213,7 @@ console.log(urlParams.append('active', '1')); // "?post=1234&action=edit&active=
 ```
 
 
-#  Shuffle an array 
+# Shuffle an Array 
 
 
 ```javascript
@@ -227,7 +227,7 @@ function func(a,b){
 console.log(shuffle);
 ```
 
-#  Count elements in an array
+# Count Elements in an Array
 
 
 ```javascript
@@ -253,7 +253,7 @@ const countMyFruits = myFruits.reduce((countFruits,fruit) => {
 ```
 
 
-#  Aliases with JavaScript Destructuring
+# Aliases With JavaScript Destructuring
 
 
 ```javascript
@@ -274,7 +274,7 @@ console.log(pageName) // JSsnippets
 
 
 
-#  The Object.is() method determines whether two values are the same value
+# The Object.is() Method Determines Whether Two Values Are the Same
 
 
 ```javascript
@@ -293,7 +293,7 @@ Object.is(foo, bar);         // false
 
 
 
-#  How can we freeze an object
+# How We Can Freeze an Object
 
 
 ```javascript
@@ -323,7 +323,7 @@ Object.isFrozen(obj) //true
 ```
 
 
-#  Printing Object keys and values
+# Printing Object Keys and Values
 
 
 ```javascript
@@ -345,7 +345,7 @@ for(let [key,value] of Object.entries(obj)){
 // order is not guaranteed
 
 ```
-#  Capture the right click event
+# Capture the Right Click Event
 
 ```javascript
 window.oncontextmenu = () => {
@@ -361,7 +361,7 @@ window.addEventListener('contextmenu', ()=>{
 ```
 
 
-#  In HTML5, you can tell the browser when to run your JavaScript code
+# In HTML5, You Can Tell the Browser When to Run Your JavaScript Code
 ```javascript
 
 //Without async or defer, browser will run your script immediately, before rendering the elements that's below your script tag.
@@ -375,7 +375,7 @@ window.addEventListener('contextmenu', ()=>{
 <script defer src="myscript.js"></script>
 ```
 
-#   nullish coalescing operator
+# Nullish Coalescing Operator
 ```javascript
 
 // an equality check against nullary values (e.g. null or undefined). Whenever the expression to the left of the ?? operator evaluates to either //undefined or null, the value defined to the right will be returned.
@@ -390,7 +390,7 @@ console.log(age);
 // expected output: "0"
 ```
 
-#  Optional chaining
+# Optional Chaining
 ```javascript
 
 const car = {}
