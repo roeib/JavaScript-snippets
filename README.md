@@ -412,3 +412,22 @@ console.log(newCarColor)
 					
 //You can use this syntax today using @babel/plugin-proposal-optional-chaining
 ```
+
+#  globalThis
+```javascript
+Accessing the global property in JavaScript has always posed some difficulty. This is because 
+different platforms have different ways to access it.
+
+Client-side JavaScript uses window or self
+
+Node.js uses global
+
+Web workers use self
+
+The globalThis property provides a standard way of accessing the global 'this' value across environments. you can access the global object in a consistent manner without having to know which environment the code is being run in. 
+
+console.log(globalThis) //get the global this depends on your environment
+
+```
+
+
