@@ -431,3 +431,29 @@ console.log(globalThis) //get the global this depends on your environment
 ```
 
 
+
+#  The second argument of JSON.stringify lets you cherry-pick 🍒 keys to serialize.
+```javascript
+const user = {
+ id: 459,
+ name: 'JS snippets',
+ age:29,
+ education:{
+  degree: 'Masters'
+ }
+}
+
+JSON.stringify(user,[name,age], 2)						
+
+/*
+returns
+
+{
+  "name": "JS snippets",
+  "age": 29
+}
+
+
+*/
+
+```
