@@ -79,6 +79,11 @@ console.log( Boolean(mySecondVar) ) // true
 console.log( !!mySecondVar ) // true
 ```
 
+# Find max number in array
+```javascript
+Math.max.apply(null, [1,2,10,3]) // 10
+```
+
 # How to repeat a string
 ```javascript
 
