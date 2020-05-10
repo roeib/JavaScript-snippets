@@ -505,6 +505,26 @@ function isJson(str) {
 }
 ```
 
+# getBoundingClientRect
+
+```javascript
+//getBoundingClientRect provides you with important pieces of data about an
+//HTML element’s size and positioning.
+
+const bodyBounderies = document.body.getBoundingClientRect();
+// =>  {
+//       top: Number,
+//       left: Number,
+//       right: Number,
+//       bottom: Number,
+//       x: Number,
+//       y: Number,
+//       width: Number,
+//       height: Number,
+//     }
+```
+
+
 
 
 
