@@ -525,6 +525,23 @@ const bodyBounderies = document.body.getBoundingClientRect();
 ```
 
 
+# Check if a node is in the viewport
 
+```javascript
+const image = document.querySelector('.animate-me');
+
+observer = new IntersectionObserver((entries) => {
+  const [ myImg ] = entries;
+    if (myImg.intersectionRatio > 0) {
+      myImg.target.classList.add('fancy');
+    } else {
+      myImg.target.classList.remove('fancy');
+    }
+});
+
+
+observer.observe(image);
+
+```
 
 
