@@ -526,7 +526,8 @@ const bodyBounderies = document.body.getBoundingClientRect();
 
 
 # Check if a node is in the viewport
-
+bonus: add/remove animation depending if an image is in the viewport
+https://codepen.io/JSsnippets/pen/PoqrjEY
 ```javascript
 const image = document.querySelector('.animate-me');
 
