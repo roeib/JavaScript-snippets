@@ -21,7 +21,7 @@
 |15 | [Freeze an object](#Freeze-an-object)|
 |16 | [Printing Object keys and values](#Printing-Object-keys-and-values)|
 |17 | [Capture the right click event](#Capture-the-right-click-event)|
-|18 | [In HTML5, you can tell the browser when to run your JavaScript code](#In-HTML5,-you-can-tell-the-browser-when-to-run-your-JavaScript-code)|
+|18 | [In HTML5, you can tell the browser when to run your JavaScript code](#in-html5-you-can-tell-the-browser-when-to-run-your-javascript-code)|
 |19 | [Nullish coalescing operator](#Nullish-coalescing-operator)|
 |20 | [Optional chaining](#Optional-chaining)|
 |21 | [globalThis](#globalThis)|
