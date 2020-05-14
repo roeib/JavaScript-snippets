@@ -14,6 +14,24 @@
 |8  | [Get unique values in an array](#Get-unique-values-in-an-array)|
 |9  | [Copy Text to Clipboard](#Copy-Text-to-Clipboard)|
 |10 | [Nested Destructuring](#Nested-Destructuring)|
+|11 | [URLSearchParams](#URLSearchParams)|
+|12 | [Count elements in an array](#Count-elements-in-an-array)|
+|13 | [Aliases with JavaScript Destructuring](#Aliases-with-JavaScript-Destructuring)|
+|14 | [The Object.is() method determines whether two values are the same value](#The-Object.is()-method-determines-whether-two-values-are-the-same-value)|
+|15 | [Freeze an object](#Freeze-an-object)|
+|16 | [Printing Object keys and values](#Printing-Object-keys-and-values)|
+|17 | [Capture the right click event](#Capture-the-right-click-event)|
+|18 | [In HTML5, you can tell the browser when to run your JavaScript code](#In-HTML5,-you-can-tell-the-browser-when-to-run-your-JavaScript-code)|
+|19 | [Nullish coalescing operator](#Nullish-coalescing-operator)|
+|20 | [Optional chaining](#Optional-chaining)|
+|21 | [globalThis](#globalThis)|
+|22 | [The second argument of JSON.stringify lets you cherry-pick 🍒 keys to serialize.](#The-second-argument-of-JSON.stringify-lets-you-cherry-pick-🍒-keys-to-serialize)|
+|23 | [Fire an event listener only once.](#Fire-an-event-listener-only-once)|
+|24 | [Vanilla JS toggle](#Vanilla-JS-toggle)|
+|25 | [Check if a string is a valid JSON](#Check-if-a-string-is-a-valid-JSON)|
+|26 | [getBoundingClientRect](#getBoundingClientRect)|
+|27 | [Check if a node is in the viewport](#Check-if-a-node-is-in-the-viewport)|
+
 
 
 
@@ -217,7 +235,8 @@ const { education : { degree } } = user;
 console.log(degree) //Masters
 ```
 
-#  URLSearchParams 
+**[⬆ Back to Top](#table-of-contents)**
+###  URLSearchParams 
 
 
 ```javascript
@@ -232,22 +251,8 @@ console.log(urlParams.toString()); // "?post=1234&action=edit"
 console.log(urlParams.append('active', '1')); // "?post=1234&action=edit&active=1"
 ```
 
-
-#  Shuffle an array 
-
-
-```javascript
-const list = [1,2,3,4,5,6,7,8,9];
-const shuffle = list.sort(func);
-
-function func(a,b){
-  return 0.5 - Math.random();
-}
-
-console.log(shuffle);
-```
-
-#  Count elements in an array
+**[⬆ Back to Top](#table-of-contents)**
+###  Count elements in an array
 
 
 ```javascript
@@ -272,8 +277,8 @@ const countMyFruits = myFruits.reduce((countFruits,fruit) => {
  // { Apple:3, Banana:1, Mango:2, Orange:1 }
 ```
 
-
-#  Aliases with JavaScript Destructuring
+**[⬆ Back to Top](#table-of-contents)**
+###  Aliases with JavaScript Destructuring
 
 
 ```javascript
@@ -293,8 +298,8 @@ console.log(pageName) // JSsnippets
 ```
 
 
-
-#  The Object.is() method determines whether two values are the same value
+**[⬆ Back to Top](#table-of-contents)**
+###  The Object.is() method determines whether two values are the same value
 
 
 ```javascript
@@ -312,8 +317,8 @@ Object.is(foo, bar);         // false
 ```
 
 
-
-#  How can we freeze an object
+**[⬆ Back to Top](#table-of-contents)**
+###  Freeze an object
 
 
 ```javascript
@@ -342,8 +347,8 @@ Object.isFrozen(obj) //true
 
 ```
 
-
-#  Printing Object keys and values
+**[⬆ Back to Top](#table-of-contents)**
+###  Printing Object keys and values
 
 
 ```javascript
@@ -365,7 +370,9 @@ for(let [key,value] of Object.entries(obj)){
 // order is not guaranteed
 
 ```
-#  Capture the right click event
+
+**[⬆ Back to Top](#table-of-contents)**
+###  Capture the right click event
 
 ```javascript
 window.oncontextmenu = () => {
@@ -380,8 +387,8 @@ window.addEventListener('contextmenu', ()=>{
 },false)
 ```
 
-
-#  In HTML5, you can tell the browser when to run your JavaScript code
+**[⬆ Back to Top](#table-of-contents)**
+###  In HTML5, you can tell the browser when to run your JavaScript code
 ```javascript
 
 //Without async or defer, browser will run your script immediately, before rendering the elements that's below your script tag.
@@ -395,7 +402,8 @@ window.addEventListener('contextmenu', ()=>{
 <script defer src="myscript.js"></script>
 ```
 
-#   nullish coalescing operator
+**[⬆ Back to Top](#table-of-contents)**
+###   Nullish coalescing operator
 ```javascript
 
 // an equality check against nullary values (e.g. null or undefined). Whenever the expression to the left of the ?? operator evaluates to either //undefined or null, the value defined to the right will be returned.
@@ -410,7 +418,8 @@ console.log(age);
 // expected output: "0"
 ```
 
-#  Optional chaining
+**[⬆ Back to Top](#table-of-contents)**
+###  Optional chaining
 ```javascript
 
 const car = {}
@@ -433,7 +442,8 @@ console.log(newCarColor)
 //You can use this syntax today using @babel/plugin-proposal-optional-chaining
 ```
 
-#  globalThis
+**[⬆ Back to Top](#table-of-contents)**
+###  globalThis
 ```javascript
 Accessing the global property in JavaScript has always posed some difficulty. This is because 
 different platforms have different ways to access it.
@@ -451,7 +461,7 @@ console.log(globalThis) //get the global this depends on your environment
 ```
 
 
-
+**[⬆ Back to Top](#table-of-contents)**
 #  The second argument of JSON.stringify lets you cherry-pick 🍒 keys to serialize.
 ```javascript
 const user = {
@@ -478,8 +488,8 @@ returns
 
 ```
 
-
-#  Fire an event listener only once.
+**[⬆ Back to Top](#table-of-contents)**
+###  Fire an event listener only once
 ```javascript
 const el = document.getElementById("btn");
 
@@ -493,8 +503,8 @@ el.addEventListener('click', myClickHandler, {
 });
 
 ```
-
-#  Vanilla JS toggle
+**[⬆ Back to Top](#table-of-contents)**
+###  Vanilla JS toggle
 ```javascript
 const span = document.querySelector("span");
 let classes = span.classList;
@@ -510,7 +520,9 @@ span.addEventListener("click", function() {
 });
 
 ```
-# Check if a string is a valid JSON
+
+**[⬆ Back to Top](#table-of-contents)**
+### Check if a string is a valid JSON
 
 ```javascript
 function isJson(str) {
@@ -524,8 +536,8 @@ function isJson(str) {
     return true;									
 }
 ```
-
-# getBoundingClientRect
+**[⬆ Back to Top](#table-of-contents)**
+### getBoundingClientRect
 
 ```javascript
 //getBoundingClientRect provides you with important pieces of data about an
@@ -544,8 +556,8 @@ const bodyBounderies = document.body.getBoundingClientRect();
 //     }
 ```
 
-
-# Check if a node is in the viewport
+**[⬆ Back to Top](#table-of-contents)**
+### Check if a node is in the viewport
 bonus: add/remove animation depending if an image is in the viewport
 https://codepen.io/JSsnippets/pen/PoqrjEY
 ```javascript
