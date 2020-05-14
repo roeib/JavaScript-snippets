@@ -1,14 +1,11 @@
 # JavaScript-snippets
 > Click :star:if you like the project. Pull Request are highly appreciated. Follow us [Facebook](https://www.facebook.com/snippetsJS) on Facebook.
-<img src="Logo.png" alt="JS snippets logo">
-
-
 
 ### Table of Contents
 | No. | Questions |
 |---- | ---------
-|1  | [What are the possible ways to create objects in JavaScript?](#How-to-generate-a-random-number-in-a-given-range) |
-|2  | [What is prototype chain?](#what-is-prototype-chain)|
+|1  | [Generate a random number in a given range](#How-to-generate-a-random-number-in-a-given-range) |
+|2  | [Find the difference between two arrays](#How-to-find-the-difference-between-two-arrays)|
 
 
 **[⬆ Back to Top](#table-of-contents)**
@@ -31,8 +28,8 @@ const getRandomNumberInclusive =(min, max)=> {
 getRandomNumberInclusive(2, 10);
 ```
 
-# How to find the difference between two arrays.
-
+**[⬆ Back to Top](#table-of-contents)**
+### How to find the difference between two arrays
 
 ```javascript
 const firstArr = [5, 2, 1];
