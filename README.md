@@ -1,19 +1,19 @@
 # JavaScript-snippets
-> Click :star:if you like the project. Pull Request are highly appreciated. Follow us [Facebook](https://www.facebook.com/snippetsJS) on Facebook.
+> Click :star:if you like the project. Pull Request are highly appreciated. Follow us on [Facebook](https://www.facebook.com/snippetsJS)
 
 ### Table of Contents
 | No. | Questions |
 |---- | ---------
 |1  | [Generate a random number in a given range](#How-to-generate-a-random-number-in-a-given-range) |
 |2  | [Find the difference between two arrays](#How-to-find-the-difference-between-two-arrays)|
-|3  | [Convert truthy/falsy to boolean(true/false)](#Convert_truthy_falsy_to_boolean)|
-|4  | [Repeat a string](#Repeat_a_string)|
-|5  | [Check how long an operation takes](#Check_how_long_an_operation_takes)|
-|6  | [Two ways to remove an item in a specific in an array](#Two_ways_to_remove_an_item_in_a_specific_in_an_array)|
-|7  | [Did you know you can flat an array?](#Did_you_know_you_can_flat_an_array)|
-|8  | [Get unique values in an array](#Get_unique_values_in_an_array)|
-|9  | [Copy Text to Clipboard](#Copy_Text_to_Clipboard)|
-|10 | [Nested Destructuring](#Nested_Destructuring)|
+|3  | [Convert truthy/falsy to boolean(true/false)](#Convert-truthy-falsy-to-boolean)|
+|4  | [Repeat a string](#Repeat-a-string)|
+|5  | [Check how long an operation takes](#Check-how-long-an-operation-takes)|
+|6  | [Two ways to remove an item in a specific in an array](#Two-ways-to-remove-an-item-in-a-specific-in-an-array)|
+|7  | [Did you know you can flat an array?](#Did-you-know-you-can-flat-an-array)|
+|8  | [Get unique values in an array](#Get-unique-values-in-an-array)|
+|9  | [Copy Text to Clipboard](#Copy-Text-to-Clipboard)|
+|10 | [Nested Destructuring](#Nested-Destructuring)|
 
 
 
