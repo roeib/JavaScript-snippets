@@ -1,13 +1,18 @@
 # JavaScript-snippets
+> Click :star:if you like the project. Pull Request are highly appreciated. Follow us [Facebook](https://www.facebook.com/snippetsJS) on Facebook.
 <img src="Logo.png" alt="JS snippets logo">
 
-# JSsnippets on Facebook
-
-find us on [Facebook](https://www.facebook.com/snippetsJS)
 
 
-# How to generate a random number in a given range
+### Table of Contents
+| No. | Questions |
+|---- | ---------
+|1  | [What are the possible ways to create objects in JavaScript?](#How-to-generate-a-random-number-in-a-given-range) |
+|2  | [What is prototype chain?](#what-is-prototype-chain)|
 
+
+**[⬆ Back to Top](#table-of-contents)**
+### How to generate a random number in a given range
 ```javascript
 // Returns a random number(float) between min (inclusive) and max (exclusive) 
 
