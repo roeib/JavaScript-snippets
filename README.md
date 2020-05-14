@@ -17,7 +17,7 @@
 |11 | [URLSearchParams](#URLSearchParams)|
 |12 | [Count elements in an array](#Count-elements-in-an-array)|
 |13 | [Aliases with JavaScript Destructuring](#Aliases-with-JavaScript-Destructuring)|
-|14 | [The Object.is() method determines whether two values are the same value](#The-Object.is()-method-determines-whether-two-values-are-the-same-value)|
+|14 | [The Object.is() method determines whether two values are the same value](#the-objectis-method-determines-whether-two-values-are-the-same-value)|
 |15 | [Freeze an object](#Freeze-an-object)|
 |16 | [Printing Object keys and values](#Printing-Object-keys-and-values)|
 |17 | [Capture the right click event](#Capture-the-right-click-event)|
@@ -25,7 +25,7 @@
 |19 | [Nullish coalescing operator](#Nullish-coalescing-operator)|
 |20 | [Optional chaining](#Optional-chaining)|
 |21 | [globalThis](#globalThis)|
-|22 | [The second argument of JSON.stringify lets you cherry-pick 🍒 keys to serialize.](#The-second-argument-of-JSON.stringify-lets-you-cherry-pick-🍒-keys-to-serialize)|
+|22 | [The second argument of JSON.stringify lets you cherry-pick 🍒 keys to serialize.](#the-second-argument-of-jsonstringify-lets-you-cherry-pick--keys-to-serialize)|
 |23 | [Fire an event listener only once.](#Fire-an-event-listener-only-once)|
 |24 | [Vanilla JS toggle](#Vanilla-JS-toggle)|
 |25 | [Check if a string is a valid JSON](#Check-if-a-string-is-a-valid-JSON)|
