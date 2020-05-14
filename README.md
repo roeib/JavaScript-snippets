@@ -6,7 +6,7 @@
 |---- | ---------
 |1  | [Generate a random number in a given range](#How-to-generate-a-random-number-in-a-given-range) |
 |2  | [Find the difference between two arrays](#How-to-find-the-difference-between-two-arrays)|
-|3  | [Convert truthy/falsy to boolean(true/false)](#Convert_truthy/falsy_to_boolean(true/false))|
+|3  | [Convert truthy/falsy to boolean(true/false)](#Convert_truthy_falsy_to_boolean)|
 |4  | [Repeat a string](#Repeat_a_string)|
 |5  | [Check how long an operation takes](#Check_how_long_an_operation_takes)|
 |6  | [Two ways to remove an item in a specific in an array](#Two_ways_to_remove_an_item_in_a_specific_in_an_array)|
@@ -78,7 +78,8 @@ console.log('difference',difference(firstArr, secondArr))
 ```
 
 **[⬆ Back to Top](#table-of-contents)**
-### Convert truthy/falsy to boolean(true/false)
+### Convert truthy falsy to boolean
+
 ```javascript
 const myVar = null; 
 const mySecondVar = 1; 
