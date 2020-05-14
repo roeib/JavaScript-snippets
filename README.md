@@ -6,6 +6,15 @@
 |---- | ---------
 |1  | [Generate a random number in a given range](#How-to-generate-a-random-number-in-a-given-range) |
 |2  | [Find the difference between two arrays](#How-to-find-the-difference-between-two-arrays)|
+|3  | [Convert truthy/falsy to boolean(true/false)](#Convert_truthy/falsy_to_boolean(true/false))|
+|4  | [Repeat a string](#Repeat_a_string)|
+|5  | [Check how long an operation takes](#Check_how_long_an_operation_takes)|
+|6  | [Two ways to remove an item in a specific in an array](#Two_ways_to_remove_an_item_in_a_specific_in_an_array)|
+|7  | [Did you know you can flat an array?](#Did_you_know_you_can_flat_an_array)|
+|8  | [Get unique values in an array](#Get_unique_values_in_an_array)|
+|9  | [Copy Text to Clipboard](#Copy_Text_to_Clipboard)|
+|10 | [Nested Destructuring](#Nested_Destructuring)|
+
 
 
 **[⬆ Back to Top](#table-of-contents)**
@@ -68,7 +77,8 @@ difference(firstArr, secondArr); //[3,4]
 console.log('difference',difference(firstArr, secondArr))
 ```
 
-# How to convert truthy/falsy to boolean(true/false)
+**[⬆ Back to Top](#table-of-contents)**
+### Convert truthy/falsy to boolean(true/false)
 ```javascript
 const myVar = null; 
 const mySecondVar = 1; 
@@ -80,8 +90,8 @@ console.log( !!myVar ) // false
 console.log( Boolean(mySecondVar) ) // true
 console.log( !!mySecondVar ) // true
 ```
-
-# How to repeat a string
+**[⬆ Back to Top](#table-of-contents)**
+### Repeat a string
 ```javascript
 
 let aliens = '';
@@ -99,7 +109,8 @@ Array(6).join('👽')
 //👽👽👽👽👽👽
 
 ```
-# Check how long an operation takes
+**[⬆ Back to Top](#table-of-contents)**
+### Check how long an operation takes
 ```javascript
 //The performance.now() method returns a DOMHighResTimeStamp, measured in milliseconds.
 //performance.now() is relative to page load and more precise in orders of magnitude. 
@@ -112,7 +123,8 @@ const endTime = performance.now();
 console.log("this doSomething took " + (endTime - startTime) + " milliseconds.");
 ```
 
-# Two ways to remove an item in a specific in an array
+**[⬆ Back to Top](#table-of-contents)**
+### Two ways to remove an item in a specific in an array
 
 ```javascript
 //Mutating way
@@ -126,7 +138,8 @@ const newArray = nonMuatatedArray.filter((item, index) => !( index === 2 ));
 console.log(newArray) //['a','b','d','e']
 ```
 
-# Did you know you can flat an array?
+**[⬆ Back to Top](#table-of-contents)**
+### Did you know you can flat an array
 
 ```javascript
 const myArray = [2, 3, [4, 5],[7,7, [8, 9, [1, 1]]]];
@@ -142,7 +155,8 @@ myArray.flat(infinity) // [2, 3, 4, 5 ,7,7, 8, 9, 1, 1];
 
 ```
 
-# Get unique values in an array
+**[⬆ Back to Top](#table-of-contents)**
+### Get unique values in an array
 
 ```javascript
 const numbers = [1,1,3,2,5,3,4,7,7,7,8];
@@ -164,7 +178,9 @@ const unieqNumbers4 = _.uniq(numbers)
 console.log(unieqNumbers4) //[1,3,2,5,4,7,8]
 
 ```
-# Copy Text to Clipboard
+
+**[⬆ Back to Top](#table-of-contents)**
+### Copy Text to Clipboard
 
 
 ```javascript
@@ -182,7 +198,8 @@ function copyToClipboard(){
 
 ```
 
-#  Nested Destructuring
+**[⬆ Back to Top](#table-of-contents)**
+###  Nested Destructuring
 
 
 ```javascript
