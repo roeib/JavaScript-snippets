@@ -31,6 +31,7 @@
 |25 | [Check if a string is a valid JSON](#Check-if-a-string-is-a-valid-JSON)|
 |26 | [getBoundingClientRect](#getBoundingClientRect)|
 |27 | [Check if a node is in the viewport](#Check-if-a-node-is-in-the-viewport)|
+|28 | [Notify when element size is changed](#Notify-when-element-size-is-changed)|
 
 
 
@@ -574,6 +575,23 @@ observer = new IntersectionObserver((entries) => {
 
 
 observer.observe(image);
+
+```
+
+**[⬆ Back to Top](#table-of-contents)**
+### Notify when element size is changed 
+see our codepen: https://codepen.io/JSsnippets/pen/dyYoYVX
+```javascript
+const foo = document.getElementById("foo");
+
+const observer = new ResizeObserver((entries) => {
+  for (let entry of entries) {
+    const cr = entry.contentRect;
+    console.log = `Size: ${cr.width}px X ${cr.height}px`;
+  }
+});
+observer.observe(foo);
+
 
 ```
 
