@@ -32,6 +32,7 @@
 |26 | [getBoundingClientRect](#getBoundingClientRect)|
 |27 | [Check if a node is in the viewport](#Check-if-a-node-is-in-the-viewport)|
 |28 | [Notify when element size is changed](#Notify-when-element-size-is-changed)|
+|29 | [Detect if Browser Tab is in the view](#Detect-if-Browser-Tab-is-in-the-view)|
 
 
 
@@ -592,6 +593,23 @@ const observer = new ResizeObserver((entries) => {
 });
 observer.observe(foo);
 
+```
+**[⬆ Back to Top](#table-of-contents)**
+### Detect if Browser Tab is in the view
+play/pause video accordingly
+see our codepen: https://codepen.io/JSsnippets/pen/gOapPzq
+```javascript
+
+
+const video =  document.getElementById("my-video");
+
+const onVisibilitychange =()=>{
+   return document.hidden 
+     ? video.pause() 
+     : video.play();
+} 
+
+document.addEventListener("visibilitychange", onVisibilitychange)
 
 ```
 
