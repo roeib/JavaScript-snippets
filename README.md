@@ -617,6 +617,7 @@ document.addEventListener("visibilitychange", onVisibilitychange)
 
 **[⬆ Back to Top](#table-of-contents)**
 ### Private class methods and fields
+```javascript
 
 class Students {
   #name;
