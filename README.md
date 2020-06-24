@@ -33,6 +33,7 @@
 |27 | [Check if a node is in the viewport](#Check-if-a-node-is-in-the-viewport)|
 |28 | [Notify when element size is changed](#Notify-when-element-size-is-changed)|
 |29 | [Detect if Browser Tab is in the view](#Detect-if-Browser-Tab-is-in-the-view)|
+|30 | [Private class methods and fields](#Private-class-methods-and-fields)|
 
 
 
@@ -612,5 +613,35 @@ const onVisibilitychange =()=>{
 document.addEventListener("visibilitychange", onVisibilitychange)
 
 ```
+
+
+**[⬆ Back to Top](#table-of-contents)**
+### Private class methods and fields
+
+class Students {
+  #name;
+
+  constructor(){
+    this.#name = "JS snippets";
+  }
+
+  #privateMethod() {
+    return 'Come and learn Js with us';
+  }
+
+  getPrivateMessage() {
+      return this.#privateMethod();
+  }
+}
+
+const instance = new Something();
+console.log(instance.name); //=> undefined
+console.log(instance.privateMethod); //=> undefined
+console.log(instance.getPrivateMessage()); //=> Come and learn Js with us
+
+```
+
+
+
 
 
