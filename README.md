@@ -34,7 +34,7 @@
 |28 | [Notify when element size is changed](#Notify-when-element-size-is-changed)|
 |29 | [Detect if Browser Tab is in the view](#Detect-if-Browser-Tab-is-in-the-view)|
 |30 | [Private class methods and fields](#Private-class-methods-and-fields)|
-
+|31 | [Preventing paste into an input field](#Preventing-paste-into-an-input-field)|
 
 
 
@@ -642,6 +642,20 @@ console.log(instance.getPrivateMessage()); //=> Come and learn Js with us
 
 ```
 
+
+**[⬆ Back to Top](#table-of-contents)**
+### Preventing paste into an input field
+see our codepen: https://codepen.io/JSsnippets/pen/qBbyMoJ
+
+```javascript
+
+const pasteBox = document.getElementById("paste-no-event");
+pasteBox.onpaste = (e) => {
+  e.preventDefault();
+  return false;
+};
+
+```
 
 
 
