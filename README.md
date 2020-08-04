@@ -35,6 +35,7 @@
 |29 | [Detect if Browser Tab is in the view](#Detect-if-Browser-Tab-is-in-the-view)|
 |30 | [Private class methods and fields](#Private-class-methods-and-fields)|
 |31 | [Preventing paste into an input field](#Preventing-paste-into-an-input-field)|
+|32 | [The void operator](#The-void-operator)|
 
 
 
@@ -658,5 +659,19 @@ pasteBox.onpaste = (e) => {
 ```
 
 
+**[⬆ Back to Top](#table-of-contents)**
+### The void operator 
+The void operator evaluates the given expression and then returns undefined.
+```javascript
 
+
+void 0;  		//returns undefined
+void (0); 		//returns undefined
+void {}; 		//returns undefined
+void "JSsnippets; 	//returns undefined
+void (0); 		//returns undefined
+void (2 == '2'); 	//returns undefined
+void anyfunction(); 	//returns undefined
+
+```
 
