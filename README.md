@@ -36,6 +36,7 @@
 |30 | [Private class methods and fields](#Private-class-methods-and-fields)|
 |31 | [Preventing paste into an input field](#Preventing-paste-into-an-input-field)|
 |32 | [The void operator](#The-void-operator)|
+|33 | [replaceAll](#replaceAll)|
 
 
 
@@ -660,8 +661,8 @@ pasteBox.onpaste = (e) => {
 
 
 **[⬆ Back to Top](#table-of-contents)**
-### The void operator 
-The void operator evaluates the given expression and then returns undefined.
+### replaceAll 
+the method string.replaceAll(search, replaceWith) replaces all appearances of search string with replaceWith.
 ```javascript
 
 
@@ -674,4 +675,44 @@ void (2 == '2'); 	//returns undefined
 void anyfunction(); 	//returns undefined
 
 ```
+
+
+**[⬆ Back to Top](#table-of-contents)**
+### The void operator 
+The void operator evaluates the given expression and then returns undefined.
+```javascript
+
+
+const str = 'this is a JSsnippets example';
+
+const updatedStr = str.replace('example', 'snippet'); // 'this is a  JSsnippets snippet'
+
+
+The tricky part is that replace method replaces only the very first match of the substring we have passed:
+
+
+const str = 'this is a JSsnippets example and examples are great';
+
+const updatedStr = str.replace('example', 'snippet'); //'this is a JSsnippets snippet and examples are great'
+
+In order to go through this, we need to use a global regexp instead:
+
+
+const str = 'this is a JSsnippets example and examples are great';
+
+const updatedStr = str.replace(/example/g, 'snippet'); //'this is a JSsnippets snippet and snippets are greatr'
+
+but now we have new friend in town, replaceAll
+
+const str = 'this is a JSsnippets example and examples are great';
+
+const updatedStr = str.replaceAll('example', 'snippet'); //'this is a JSsnippets snippet and snippets are greatr'
+
+```
+
+
+
+
+
+
 
