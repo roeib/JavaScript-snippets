@@ -661,8 +661,8 @@ pasteBox.onpaste = (e) => {
 
 
 **[⬆ Back to Top](#table-of-contents)**
-### replaceAll 
-the method string.replaceAll(search, replaceWith) replaces all appearances of search string with replaceWith.
+### The void operator 
+The void operator evaluates the given expression and then returns undefined.
 ```javascript
 
 
@@ -678,8 +678,8 @@ void anyfunction(); 	//returns undefined
 
 
 **[⬆ Back to Top](#table-of-contents)**
-### The void operator 
-The void operator evaluates the given expression and then returns undefined.
+### replaceAll 
+the method string.replaceAll(search, replaceWith) replaces all appearances of search string with replaceWith.
 ```javascript
 
 
