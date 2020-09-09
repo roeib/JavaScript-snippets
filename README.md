@@ -37,7 +37,7 @@
 |31 | [Preventing paste into an input field](#Preventing-paste-into-an-input-field)|
 |32 | [The void operator](#The-void-operator)|
 |33 | [replaceAll](#replaceAll)|
-
+|34 | [Required Function Params](#Required-Function-Params)|
 
 
 **[⬆ Back to Top](#table-of-contents)**
@@ -711,6 +711,28 @@ const updatedStr = str.replaceAll('example', 'snippet'); //'this is a JSsnippets
 ```
 
 
+**[⬆ Back to Top](#table-of-contents)**
+### Required Function Params 
+Expanding on the default parameter technique, we can mark a parameter as mandatory
+
+```javascript
+const isRequired = () => {
+    throw new Error( 'This is a mandatory parameter.' );
+}
+
+
+const getPage = ( pageName = 'Jssnippets', url = isRequired() ) => {
+    return `${pageName} ${url}`;
+}
+
+console.log(getPage());
+
+//In the above code, url will be undefined and that will try to set the default value for it which is the isRequired() function. It will throw an error as,
+
+//Uncaught error: This is a mandatory parameter.
+//at isRequired
+
+```
 
 
 
