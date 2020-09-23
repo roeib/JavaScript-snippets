@@ -38,6 +38,8 @@
 |32 | [The void operator](#The-void-operator)|
 |33 | [replaceAll](#replaceAll)|
 |34 | [Required Function Params](#Required-Function-Params)|
+|35 | [Get input value as a number](#Get-input-value-as-a-number)|
+
 
 
 **[⬆ Back to Top](#table-of-contents)**
@@ -737,4 +739,18 @@ console.log(getPage());
 
 
 
+**[⬆ Back to Top](#table-of-contents)**
+### Get input value as a number
 
+```javascript
+
+<input type="number" id="JSsnippets" onkeyup="checkMyType(event)" />
+
+function checkMyType(event){
+  
+  console.log(typeof event.target.value) // string
+  console.log(typeof event.target.valueAsNumber ) // number
+
+}
+
+```
