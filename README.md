@@ -39,6 +39,8 @@
 |33 | [replaceAll](#replaceAll)|
 |34 | [Required Function Params](#Required-Function-Params)|
 |35 | [Get input value as a number](#Get-input-value-as-a-number)|
+|36 | [Creating a function using Function constructor](#Create-Function-Using-Constructor)|
+
 
 
 
@@ -752,5 +754,17 @@ function checkMyType(event){
   console.log(typeof event.target.valueAsNumber ) // number
 
 }
+
+```
+
+**[⬆ Back to Top](#table-of-contents)**
+### Create a function using Function constructor
+```javascript
+function bar() {
+        return new Function('return "x"'); 
+    };
+var x = bar();
+x();//returns x
+
 
 ```
