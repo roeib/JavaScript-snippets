@@ -39,7 +39,7 @@
 |33 | [replaceAll](#replaceAll)|
 |34 | [Required Function Params](#Required-Function-Params)|
 |35 | [Get input value as a number](#Get-input-value-as-a-number)|
-|36 | [Creating a function using Function constructor](#Create-Function-Using-Constructor)|
+|36 | [Creating a function using Function constructor](#create-a-function-using-function-constructor)|
 
 
 
