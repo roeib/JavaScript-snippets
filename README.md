@@ -1,5 +1,5 @@
 # JavaScript-snippets
-> Click :star:if you like the project. Pull Request are highly appreciated. Follow us on [Facebook](https://www.facebook.com/snippetsJS)
+> Click :star: if you like the project. Pull Request are highly appreciated. Follow us on [Facebook](https://www.facebook.com/snippetsJS)
 
 ### Table of Contents
 | No. | Questions |
@@ -39,6 +39,7 @@
 |33 | [replaceAll](#replaceAll)|
 |34 | [Required Function Params](#Required-Function-Params)|
 |35 | [Get input value as a number](#Get-input-value-as-a-number)|
+|36 | [reduceRight](#reduceRight)|
 
 
 
@@ -753,4 +754,24 @@ function checkMyType(event){
 
 }
 
+
 ```
+**[⬆ Back to Top](#table-of-contents)**
+### reduceRight
+
+```javascript
+
+const arr = ["a", "b", "c", "d", "e"]
+
+const reduceArray = arr.reduce((acc, current) => {
+    return acc + current
+}, "")
+//return abcde
+
+const reduceRightArray = arr.reduceRight((acc, current) => {
+    return acc + current
+}, "")
+//return edcba
+
+```
+
