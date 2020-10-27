@@ -40,7 +40,7 @@
 |34 | [Required Function Params](#Required-Function-Params)|
 |35 | [Get input value as a number](#Get-input-value-as-a-number)|
 |36 | [reduceRight](#reduceRight)|
-|37 | [Abort Fetch](#AbortFetch)|
+|37 | [Abort Fetch](#Abort-Fetch)|
 
 
 
