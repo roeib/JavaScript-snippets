@@ -40,6 +40,10 @@
 |34 | [Required Function Params](#Required-Function-Params)|
 |35 | [Get input value as a number](#Get-input-value-as-a-number)|
 |36 | [reduceRight](#reduceRight)|
+|37 | [Abort Fetch](#AbortFetch)|
+
+
+
 
 
 
@@ -774,4 +778,35 @@ const reduceRightArray = arr.reduceRight((acc, current) => {
 //return edcba
 
 ```
+
+
+
+```
+**[⬆ Back to Top](#table-of-contents)**
+### Abort Fetch
+
+```javascript
+
+
+//HTML
+<button id="download">Download</button>
+<button id="abort">Abort</button>
+
+//JS
+let controller;
+
+document.querySelector('#download').addEventListener('click', () => {
+  controller = new AbortController();
+  const signal = controller.signal;
+  fetch('https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-576p.mp4', {signal})
+    .then(() => console.log('done'));
+});
+
+document.querySelector('#abort').addEventListener('click', function() {
+  controller.abort();
+});
+
+```
+
+
 
