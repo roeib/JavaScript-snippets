@@ -780,8 +780,6 @@ const reduceRightArray = arr.reduceRight((acc, current) => {
 ```
 
 
-
-```
 **[⬆ Back to Top](#table-of-contents)**
 ### Abort Fetch
 
