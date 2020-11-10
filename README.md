@@ -41,6 +41,10 @@
 |35 | [Get input value as a number](#Get-input-value-as-a-number)|
 |36 | [reduceRight](#reduceRight)|
 |37 | [Abort Fetch](#Abort-Fetch)|
+|38 | [How to change the value of an object which is inside an array](#How-to-change-the-value-of-an-object-which-is-inside-an-array)|
+
+
+
 
 
 
@@ -806,5 +810,39 @@ document.querySelector('#abort').addEventListener('click', function() {
 
 ```
 
+
+**[⬆ Back to Top](#table-of-contents)**
+### How to change the value of an object which is inside an array
+
+```javascript
+
+const state = [
+  {
+    userId: 1,
+    name: "JSSnippets",
+    isOwner: false,
+  },
+  {
+    userId: 2,
+    name: "React",
+    isOwner: false,
+  },
+  {
+    userId: 3,
+    name: "Vue",
+    isOwner: false,
+  },
+  {
+    userId: 4,
+    name: "Angular",
+    isOwner: false,
+  },
+];
+
+const newState = state.map((obj) =>
+  obj.name === "JSSnippets" ? { ...obj, isOwner: true } : obj			
+);
+
+```
 
 
