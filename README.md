@@ -42,6 +42,7 @@
 |36 | [reduceRight](#reduceRight)|
 |37 | [Abort Fetch](#Abort-Fetch)|
 |38 | [How to change the value of an object which is inside an array](#How-to-change-the-value-of-an-object-which-is-inside-an-array)|
+|39 | [Shuffle Array](#Shuffle-Array)|
 
 
 
@@ -845,4 +846,17 @@ const newState = state.map((obj) =>
 
 ```
 
+**[⬆ Back to Top](#table-of-contents)**
+### Shuffle Array
 
+```javascript
+// Three quick steps to shuffle an array in Javascript: Map to a random number, sort on that and map the object back! 
+shuffleArray = anArray =>
+    anArray
+        .map(a => [Math.random(), a])
+        .sort((a, b) => a[0] - b[0])
+        .map(a => a[1]);
+
+console.log('Shuffled array', shuffleArray([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])) // Returns shuffled array
+
+```
