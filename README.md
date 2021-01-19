@@ -42,6 +42,8 @@
 |36 | [reduceRight](#reduceRight)|
 |37 | [Abort Fetch](#Abort-Fetch)|
 |38 | [How to change the value of an object which is inside an array](#How-to-change-the-value-of-an-object-which-is-inside-an-array)|
+|39 | [Numeric separators allow us to improve our code readability](#Numeric-separators-allow-us-to-improve-our-code-readability)|
+
 
 
 
@@ -844,5 +846,19 @@ const newState = state.map((obj) =>
 );
 
 ```
+
+**[⬆ Back to Top](#table-of-contents)**
+### Numeric separators allow us to improve our code readability
+
+```javascript
+
+100_000_000 === 100000000 // true
+
+300_000 === 300000 //true
+
+```
+
+
+
 
 
