@@ -862,3 +862,24 @@ const newState = state.map((obj) =>
 
 
 
+**[⬆ Back to Top](#table-of-contents)**
+### pay attention when using every
+
+Calling this method on an empty array will return true for any condition!
+
+
+```javascript
+
+const arr = []
+const result = arr.every(x=> x==5)
+console.log(result) //true
+
+```
+
+
+
+
+
+
+
+
