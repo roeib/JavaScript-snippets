@@ -1,5 +1,5 @@
 # JavaScript-snippets
-> Click :star: if you like the project. Pull Request are highly appreciated. Follow us on [Facebook](https://www.facebook.com/snippetsJS)
+> Click :star:  if you like the project. Pull Request are highly appreciated. Follow us on [Facebook](https://www.facebook.com/snippetsJS)
 
 ### Table of Contents
 | No. | Questions |
@@ -44,7 +44,7 @@
 |38 | [How to change the value of an object which is inside an array](#How-to-change-the-value-of-an-object-which-is-inside-an-array)|
 |39 | [Numeric separators allow us to improve our code readability](#Numeric-separators-allow-us-to-improve-our-code-readability)|
 |40 | [pay attention when using every](#pay-attention-when-using-every)|
-
+|41 | [How to convert an array of key-value tuples into an object](#How-to-convert-an-array-of-key-value-tuples-into-an-object)|
 
 
 
@@ -880,6 +880,27 @@ console.log(result) //true
 
 
 
+**[⬆ Back to Top](#table-of-contents)**
+### How to convert an array of key-value tuples into an object
 
+
+```javascript
+
+const JSarr = [
+    ['name', 'JSsnippets'],
+    ['address', 'worldwide'],
+    ['year', '2018'],
+    ['followers', '15000']
+
+];
+
+const obj = Object.fromEntries(JSarr);
+//{
+//  "name": "JSsnippets",
+// "address": "worldwide",
+//  "year": "2018",
+//  "followers": "15000"
+//}
+```
 
 
