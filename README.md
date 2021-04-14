@@ -45,7 +45,7 @@
 |39 | [Numeric separators allow us to improve our code readability](#Numeric-separators-allow-us-to-improve-our-code-readability)|
 |40 | [pay attention when using every](#pay-attention-when-using-every)|
 |41 | [How to convert an array of key-value tuples into an object](#How-to-convert-an-array-of-key-value-tuples-into-an-object)|
-
+|42 | [Native text to speech JS](#Native-text-to-speech-JS)|
 
 
 
@@ -903,4 +903,25 @@ const obj = Object.fromEntries(JSarr);
 //}
 ```
 
+**[⬆ Back to Top](#table-of-contents)**
+### Native text to speech JS
 
+
+```javascript
+
+const startSpeaking=()=>{
+
+	let msg = document.getElementById("text-to-speech").value;
+	let speech = new SpeechSynthesisUtterance();
+	
+	speech.lang = "en-US";
+	speech.text = msg;
+	speech.volume = 1;
+	speech.rate = 1;
+	speech.pitch = 1;
+
+	window.speechSynthesis.speak(speech);
+}
+
+
+```
