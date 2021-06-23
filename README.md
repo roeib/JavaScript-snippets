@@ -789,14 +789,13 @@ const reduceRightArray = arr.reduceRight((acc, current) => {
 **[⬆ Back to Top](#table-of-contents)**
 ### Abort Fetch
 
-```javascript
-
-
-//HTML
+```html
+//html
 <button id="download">Download</button>
-<button id="abort">Abort</button>
+ <button id="abort">Abort</button>
 
 //JS
+<script type="text/javascript">
 let controller;
 
 document.querySelector('#download').addEventListener('click', () => {
@@ -809,7 +808,7 @@ document.querySelector('#download').addEventListener('click', () => {
 document.querySelector('#abort').addEventListener('click', function() {
   controller.abort();
 });
-
+</script>
 ```
 
 
