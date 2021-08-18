@@ -792,7 +792,7 @@ const reduceRightArray = arr.reduceRight((acc, current) => {
 ```html
 //html
 <button id="download">Download</button>
- <button id="abort">Abort</button>
+<button id="abort">Abort</button>
 
 //JS
 <script type="text/javascript">
