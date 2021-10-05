@@ -46,7 +46,7 @@
 |40 | [pay attention when using every](#pay-attention-when-using-every)|
 |41 | [How to convert an array of key-value tuples into an object](#How-to-convert-an-array-of-key-value-tuples-into-an-object)|
 |42 | [Native text to speech JS](#Native-text-to-speech-JS)|
-|42 | [Native text to speech JS](#Native-text-to-speech-JS)|
+|42 | [toFixed](#toFixed)|
 
 
 
@@ -926,7 +926,7 @@ const startSpeaking=()=>{
 ```
 
 **[⬆ Back to Top](#table-of-contents)**
-### toFixed()
+### toFixed
 
 Warning: Floating point numbers cannot represent all decimals precisely in binary. This can lead to unexpected results, such as 0.1 + 0.2 === 0.3 returning false .
 
