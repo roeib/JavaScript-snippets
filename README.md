@@ -46,7 +46,7 @@
 |40 | [pay attention when using every](#pay-attention-when-using-every)|
 |41 | [How to convert an array of key-value tuples into an object](#How-to-convert-an-array-of-key-value-tuples-into-an-object)|
 |42 | [Native text to speech JS](#Native-text-to-speech-JS)|
-|42 | [toFixed](#toFixed)|
+|43 | [toFixed](#toFixed)|
 
 
 
