@@ -160,7 +160,7 @@ console.log("this doSomething took " + (endTime - startTime) + " milliseconds.")
 ```
 
 **[⬆ Back to Top](#table-of-contents)**
-### Two ways to remove an item in a specific in an array
+### Two ways to remove an item in a specific index in an array
 
 ```javascript
 //Mutating way
