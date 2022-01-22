@@ -9,7 +9,7 @@
 |3  | [Convert truthy/falsy to boolean(true/false)](#Convert-truthy-falsy-to-boolean)|
 |4  | [Repeat a string](#Repeat-a-string)|
 |5  | [Check how long an operation takes](#Check-how-long-an-operation-takes)|
-|6  | [Two ways to remove an item in a specific in an array](#Two-ways-to-remove-an-item-in-a-specific-in-an-array)|
+|6  | [Two ways to remove an item in a specific index in an array](#Two-ways-to-remove-an-item-in-a-specific-index-in-an-array)|
 |7  | [Did you know you can flat an array?](#Did-you-know-you-can-flat-an-array)|
 |8  | [Get unique values in an array](#Get-unique-values-in-an-array)|
 |9  | [Copy Text to Clipboard](#Copy-Text-to-Clipboard)|
