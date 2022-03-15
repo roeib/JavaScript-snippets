@@ -47,6 +47,10 @@
 |41 | [How to convert an array of key-value tuples into an object](#How-to-convert-an-array-of-key-value-tuples-into-an-object)|
 |42 | [Native text to speech JS](#Native-text-to-speech-JS)|
 |43 | [toFixed](#toFixed)|
+|44 | [generate randomUUID](#generate-random-uuid)|
+
+
+
 
 
 
@@ -937,5 +941,20 @@ Warning: Floating point numbers cannot represent all decimals precisely in binar
 
 2.35.toFixed(1)        // Returns '2.4'. Note it rounds up
 2.65.toFixed(1)        // Returns '2.6'. Note it rounds down -why??? see the warning above
+
+```
+
+
+**[⬆ Back to Top](#table-of-contents)**
+### generate random uuid
+
+The randomUUID() method of the Crypto interface is used to generate a v4 UUID using a cryptographically secure random number generator.
+
+```javascript
+
+crypto.randomUUID() // print in console '460ff1e6-2106-4848-833d-5c5b3bfdc943'
+
+crypto.randomUUID() // print in console '9a91c014-d1b1-453a-8091-ef8b9b48b14a'
+
 
 ```
