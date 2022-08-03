@@ -48,9 +48,7 @@
 |42 | [Native text to speech JS](#Native-text-to-speech-JS)|
 |43 | [toFixed](#toFixed)|
 |44 | [generate randomUUID](#generate-random-uuid)|
-
-
-
+|45 | [structuredClone](#structuredClone)|
 
 
 
@@ -955,6 +953,32 @@ The randomUUID() method of the Crypto interface is used to generate a v4 UUID us
 crypto.randomUUID() // print in console '460ff1e6-2106-4848-833d-5c5b3bfdc943'
 
 crypto.randomUUID() // print in console '9a91c014-d1b1-453a-8091-ef8b9b48b14a'
+
+
+```
+
+
+**[⬆ Back to Top](#table-of-contents)**
+### structuredClone
+
+If you want to deep clone a value in Node.js, you no longer need to use a library or the JSON.parse(JSON.stringify(value)) hack. You can use the new global function structuredClone()
+
+```javascript
+
+const user = {
+  name: "JS Snippets",
+  address: { street: "Original Road", city: "Placeshire" },
+};
+
+const clonedUser = structuredClone(user);
+
+clonedUser.address.street = "New Road";
+
+console.log("user.address.street:", user.address.street);
+// > Original Road
+
+console.log("clonedUser.address.street:", clonedUser.address.street);
+// > New Road
 
 
 ```
