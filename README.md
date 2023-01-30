@@ -49,9 +49,7 @@
 |43 | [toFixed](#toFixed)|
 |44 | [generate randomUUID](#generate-random-uuid)|
 |45 | [structuredClone](#structuredClone)|
-
-
-
+|46 | [get device orientation](#get-device-orientation)|
 
 
 **[⬆ Back to Top](#table-of-contents)**
@@ -980,5 +978,19 @@ console.log("user.address.street:", user.address.street);
 console.log("clonedUser.address.street:", clonedUser.address.street);
 // > New Road
 
+
+```
+
+**[⬆ Back to Top](#table-of-contents)**
+### get device orientation
+
+Browsers expose a global variable named screen, which we’ll use to access the information we need.
+
+```javascript
+
+function getOrientation() {  
+    const isPortrait = screen.orientation.type.startswith('portrait')  
+    return isPortrait ? 'portrait' : 'landscape'
+}
 
 ```
