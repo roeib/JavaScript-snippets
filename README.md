@@ -1000,8 +1000,8 @@ function getOrientation() {
 
 |                        | const | Let | Var |
 |------------------------|-------|-----|-----|
-| Can be Reaasigned?     | X     | :white_check_mark:   | V   |
-| Cab be Redeclared?     | X     | X   | V   |
-| Block Scope            | V     | V   | X   |
-| Function Scope         | V     | V   | V   |
-| Stored in Global Scope | X     | X   | V   |
+| Can be Reaasigned?     | :x:     | :white_check_mark:   |:white_check_mark:   |
+| Cab be Redeclared?     | :x:    | :x:  | :white_check_mark:  |
+| Block Scope            | :white_check_mark:    |:white_check_mark:   | :x:   |
+| Function Scope         | :white_check_mark:     | :white_check_mark:   | :white_check_mark:   |
+| Stored in Global Scope | :x:     | :x:   | :white_check_mark:   |
