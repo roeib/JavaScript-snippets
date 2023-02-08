@@ -50,7 +50,7 @@
 |44 | [generate randomUUID](#generate-random-uuid)|
 |45 | [structuredClone](#structuredClone)|
 |46 | [get device orientation](#get-device-orientation)|
-
+|47 | [CONST vs LET vs VAR](#const-let-var)|
 
 **[⬆ Back to Top](#table-of-contents)**
 ### How to generate a random number in a given range
@@ -994,3 +994,14 @@ function getOrientation() {
 }
 
 ```
+
+**[⬆ Back to Top](#table-of-contents)**
+### CONST vs LET vs VAR
+
+|                        | const | Let | Var |
+|------------------------|-------|-----|-----|
+| Can be Reaasigned?     | :x:     | :white_check_mark:   |:white_check_mark:   |
+| Cab be Redeclared?     | :x:    | :x:  | :white_check_mark:  |
+| Block Scope            | :white_check_mark:    |:white_check_mark:   | :x:   |
+| Function Scope         | :white_check_mark:     | :white_check_mark:   | :white_check_mark:   |
+| Stored in Global Scope | :x:     | :x:   | :white_check_mark:   |
