@@ -198,7 +198,7 @@ myArray.flat(infinity) // [2, 3, 4, 5 ,7,7, 8, 9, 1, 1];
 const numbers = [1,1,3,2,5,3,4,7,7,7,8];
 
 //Ex1
-const unieqNumbers = numbers.filter((v,i,a) => a.indexOf(v )=== i )
+const unieqNumbers = numbers.filter((v,i,a) => a.indexOf(v) === i)
 console.log(unieqNumbers) //[1,3,2,5,4,7,8]
 
 //Ex2
